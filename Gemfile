@@ -19,6 +19,24 @@ gem 'autoprefixer-rails'
 gem 'formtastic-bootstrap'
 gem 'rails_bootstrap_navbar'
 
+#Simple navigation
+gem 'simple-navigation'
+gem 'active_link_to'
+gem 'tabs_on_rails'
+
+
+#Wildcart subdomains
+gem 'subdomainitis'
+gem 'subdomain-fu'
+
+
+# Data visualization for admin dashboard
+gem 'chartkick'
+gem 'ruby-graphviz'
+
+# Paypal adaptive payments for chained paypal payments to providers
+gem 'paypal-sdk-adaptivepayments'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -39,6 +57,16 @@ gem 'rails-html-sanitizer', '~> 1.0'
 
 # Use Devise for authentication
 gem 'devise'
+
+# Social media logins
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+
+# Two factor authentication with devise
+gem 'two_factor_authentication'
+
 
 # Use ActiveAdmin 1.0 for Rails 4 support
 gem 'activeadmin', '~> 1.0.0pre1'

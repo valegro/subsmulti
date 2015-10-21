@@ -69,7 +69,7 @@ or
 
 === Production
 
-<tt>$ sudo -u postgres createuser -d -P subsmulti</tt>
+<tt>$ sudo su postgres -c '/usr/lib/postgresql/9.4/bin/createuser -d -P subsmulti'</tt>
 
 <tt>$ subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake db:setup</tt>
 
@@ -77,10 +77,4 @@ or
 
 <tt>$ rake secret</tt>
 
-<tt>$ STRIPE_PUBLISHABLE_KEY='<em>live pk</em>' STRIPE_SECRET_KEY='<em>live sk</em>' SECRET_KEY_BASE='<em>secret</em>'
-    subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production bundle exec rackup -E production</tt>
-
-You can then log at http://localhost:9999/admin as admin@example.com with the initial
-default password "password".  You can now create and edit admin users and the site configuration.
-
-You can then visit http://localhost:9999 to see the public interface.
+<tt>$ STRIPE_PUBLISHABLE_KEY='<em>live pk</em>' STRIPE_SECRET_KEY='<em>live sk</em>' SECRET_KEY_BASE='<em>secret</em>' subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production bundle exec rackup -E production</tt>

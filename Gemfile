@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.0'
@@ -24,10 +24,11 @@ gem 'simple-navigation'
 gem 'active_link_to'
 gem 'tabs_on_rails'
 
+#Time Zone
+gem 'tzinfo-data'
 
 #Wildcart subdomains
 gem 'subdomainitis'
-gem 'subdomain-fu'
 
 
 # Data visualization for admin dashboard

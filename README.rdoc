@@ -1,3 +1,4 @@
+== Multi-domain Subscriptus 2 for sole traders and individuals
 == Prerequisites
 
 * bundler
@@ -30,9 +31,9 @@ On Ubuntu 14.04 (Trusty Tahr):
 
 Then, on all systems:
 
-<tt>$ git clone https://[username]@github.com/valegro/subsright.git</tt>
+<tt>$ git clone https://[username]@github.com/valegro/subsmulti.git</tt>
 
-<tt>$ cd subsright</tt>
+<tt>$ cd subsmulti</tt>
 
 <tt>$ git checkout master</tt>
 
@@ -68,18 +69,18 @@ or
 
 === Production
 
-<tt>$ sudo -u postgres createuser -d -P subsright</tt>
+<tt>$ sudo -u postgres createuser -d -P subsmulti</tt>
 
-<tt>$ SUBSRIGHT_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake db:setup</tt>
+<tt>$ subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake db:setup</tt>
 
-<tt>$ SUBSRIGHT_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake assets:precompile</tt>
+<tt>$ subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake assets:precompile</tt>
 
 <tt>$ rake secret</tt>
 
 <tt>$ STRIPE_PUBLISHABLE_KEY='<em>live pk</em>' STRIPE_SECRET_KEY='<em>live sk</em>' SECRET_KEY_BASE='<em>secret</em>'
-    SUBSRIGHT_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production bundle exec rackup -E production</tt>
+    subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production bundle exec rackup -E production</tt>
 
-You can then log at http://localhost:9292/admin as admin@example.com with the initial
+You can then log at http://localhost:9999/admin as admin@example.com with the initial
 default password "password".  You can now create and edit admin users and the site configuration.
 
-You can then visit http://localhost:9292 to see the public interface.
+You can then visit http://localhost:9999 to see the public interface.

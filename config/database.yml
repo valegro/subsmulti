@@ -83,4 +83,4 @@ production:
   host: localhost
   database: subsmulti_production
   username: subsmulti
-  password: <%= ENV['SUBSRIGHT_DATABASE_PASSWORD'] %>
+  password: zxnm9014

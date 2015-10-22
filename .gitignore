@@ -20,3 +20,6 @@
 
 # Ignore coverage output
 /coverage
+
+# Ignore Gemfile.lock
+/Gemfile.lock

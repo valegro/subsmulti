@@ -49,8 +49,12 @@
 <div id="main-container" class="container">
 
   <div class="page-header">
-    <h1><%= image_tag Configuration.provider_logo.url %></h1>
-    <h2><%= Configuration.provider_name %></h2>
+  <% if  Configuration.provider_logo.present? %>
+     <h1><%= image_tag Configuration.provider_logo.url %></h1> 
+  <% else %>
+     <h2><%= Configuration.provider_name %></h2>
+  <% end %>
+    
   </div>
   <% if notice %>
     <div class="alert alert-success" role="alert">

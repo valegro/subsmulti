@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/stripe/stripe-ruby
-  revision: 216218aeb00ad05093c5a77ad43836ce44b58d17
+  revision: 1182539ae423a08741e7bd143112af4bd5421f17
   specs:
     stripe (1.30.2)
       json (~> 1.8.1)
@@ -73,6 +73,10 @@ GEM
       json
     bcrypt (3.1.10)
     bcrypt (3.1.10-x86-mingw32)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    bcrypt-ruby (3.1.5-x86-mingw32)
+      bcrypt (>= 3.1.3)
     bootstrap-navbar (2.2.4)
       gem_config (~> 0.3)
     bootstrap-sass (3.3.5.1)
@@ -170,6 +174,7 @@ GEM
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
+    libv8 (3.16.14.13)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -273,6 +278,7 @@ GEM
       polyamorous (~> 1.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    ref (2.0.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rest-client (1.8.0)
@@ -320,7 +326,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    shoulda-matchers (3.0.0)
+    shoulda-matchers (3.0.1)
       activesupport (>= 4.0.0)
     simple-navigation (4.0.3)
       activesupport (>= 2.3.2)
@@ -343,6 +349,9 @@ GEM
     subdomainitis (0.9.32)
       rails (>= 3.0.3)
     tabs_on_rails (2.2.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.1)
@@ -382,6 +391,7 @@ DEPENDENCIES
   activeadmin (~> 1.0.0pre1)
   autoprefixer-rails
   bcrypt (~> 3.1.9)
+  bcrypt-ruby
   bootstrap-sass
   capybara
   chartkick
@@ -420,6 +430,7 @@ DEPENDENCIES
   stripe!
   subdomainitis
   tabs_on_rails
+  therubyracer
   tinymce-rails
   turbolinks
   two_factor_authentication

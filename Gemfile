@@ -11,7 +11,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby
 
 # Use SASS port of bootstrap
 gem 'bootstrap-sass'
@@ -25,6 +25,7 @@ gem 'active_link_to'
 gem 'tabs_on_rails'
 
 #Time Zone
+#gem 'tzinfo-data'
 gem 'tzinfo-data'
 
 #Wildcart subdomains
@@ -52,6 +53,7 @@ gem 'spring', group: :development
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.9'
+gem "bcrypt-ruby", :require => "bcrypt"
 
 # Use Rails Html Sanitizer for HTML sanitization
 gem 'rails-html-sanitizer', '~> 1.0'

@@ -10,7 +10,7 @@ ActiveAdmin.register Configuration do
 
   controller do
     def index
-      params[:action] = 'Configuration' # for the active admin title
+      params[:action] = 'Organisation Details' # for the active admin title
       render 'admin/configuration/index', layout: 'active_admin'
     end
 

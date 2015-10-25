@@ -1,4 +1,5 @@
-== Multi-domain Subscriptus 2 for sole traders and individuals
+== Multi-domain Subscriptus 2
+
 == Prerequisites
 
 * bundler
@@ -71,9 +72,9 @@ or
 
 <tt>$ sudo su postgres -c '/usr/lib/postgresql/9.4/bin/createuser -d -P subsmulti'</tt>
 
-<tt>$ subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake db:setup</tt>
+<tt>$ SUBSMULTI_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake db:setup</tt>
 
-<tt>$ subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake assets:precompile</tt>
+<tt>$ SUBSMULTI_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production rake assets:precompile</tt>
 
 <tt>$ rake secret</tt>
 

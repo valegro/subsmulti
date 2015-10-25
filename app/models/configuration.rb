@@ -4,7 +4,7 @@ class Configuration < ActiveRecord::Base
   validates :key, presence: true, uniqueness: true
   validates :form_type, presence: true
   validates_attachment_content_type :provider_logo, content_type: %r{\Aimage/}, unless: 'provider_logo_file_name.nil?'
-
+   
   class_attribute :settings
   self.settings = []
 

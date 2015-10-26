@@ -40,7 +40,17 @@ Then, on all systems:
 
 <tt>$ bundle install</tt>
 
-<tt>$ sudo gem pristine --all</tt>
+<tt>$ sudo gem pristine --all</tt> 
+
+# set postgres to use md5 security instead of peer
+
+<tt> sudo nano /etc/postgresql/9.4/main/pg_hba.conf </tt>
+# "local" is for Unix domain socket connections only
+local   all             all                                     md5
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            md5
+# IPv6 local connections:
+host    all             all             ::1/128                 md5
 
 === Development
 
@@ -78,6 +88,4 @@ or
 
 <tt>$ rake secret</tt>
 
-<tt>$ STRIPE_PUBLISHABLE_KEY='<em>live pk</em>' STRIPE_SECRET_KEY='<em>live sk</em>' SECRET_KEY_BASE='<em>secret</em>' subsmulti_DATABASE_PASSWORD='<em>password</em>' RAILS_ENV=production bundle exec rackup -E production</tt>
-
-<tt>STRIPE_PUBLISHABLE_KEY='pk_test_6pRNASCoBOKtIshFeQd4XMUh' STRIPE_SECRET_KEY='sk_test_lqEFdxAoWtsGNdDLUgLT5HfV' SECRET_KEY_BASE='df0bbbc8d1450968109d030108031fb28b86aae20ecdb48208e6d3340ee993300b42a0307ed4c18ca6a38306bebc3faf7e7260b72dc3cbf522f6006ecd4276d5' SUBSMULTI_DATABASE_PASSWORD='zxnm9014' RAILS_ENV=production bundle exec rackup -E production &</tt>
+<tt>$ STRIPE_PUBLISHABLE_KEY='pk_test_6pRNASCoBOKtIshFeQd4XMUh' STRIPE_SECRET_KEY='sk_test_lqEFdxAoWtsGNdDLUgLT5HfV' SECRET_KEY_BASE='df0bbbc8d1450968109d030108031fb28b86aae20ecdb48208e6d3340ee993300b42a0307ed4c18ca6a38306bebc3faf7e7260b72dc3cbf522f6006ecd4276d5' SUBSMULTI_DATABASE_PASSWORD='zxnm9014' RAILS_ENV=production bundle exec rackup -E production &</tt>

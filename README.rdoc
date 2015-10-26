@@ -42,9 +42,9 @@ Then, on all systems:
 
 <tt>$ sudo gem pristine --all</tt> 
 
-<tt># set postgres to use md5 security instead of peer</tt>
+Set postgres to use md5 security instead of peer.
 
-<tt> sudo nano /etc/postgresql/9.4/main/pg_hba.conf </tt>
+<tt>$ sudo nano /etc/postgresql/9.4/main/pg_hba.conf </tt>
 
 <tt># "local" is for Unix domain socket connections only</tt>
 
